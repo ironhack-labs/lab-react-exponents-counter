@@ -7,6 +7,7 @@ import ExponentThree from "./components/ExponentThree";
 import ExponentFour from "./components/ExponentFour";
 import ExponentFive from "./components/ExponentFive";
 import ExponentSix from "./components/ExponentSix";
+import Exponent from "./components/Exponent";
 
 
 function App() {
@@ -26,11 +27,11 @@ function App() {
       <h2><em>Exponents</em></h2>
 
       <div className="container">
-        <ExponentTwo count={count} />
-        <ExponentThree count={count} />
-        <ExponentFour count={count} />
-        <ExponentFive count={count} />
-        <ExponentSix count={count} />
+        <Exponent num="2" exponent={count}/>
+        <Exponent num="3" exponent={count}/>
+        <Exponent num="4" exponent={count}/>
+        <Exponent num="5" exponent={count}/>
+        <Exponent num="6" exponent={count}/>
       </div>
     </div>
   );
