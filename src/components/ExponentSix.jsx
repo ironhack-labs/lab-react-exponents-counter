@@ -1,7 +1,9 @@
-const ExponentSix = () => (
+import Exponent from "./exponent";
+
+const ExponentSix = (props) => (
   <div className="exponent-counter-container">
-    <p className="exponent-label">n⁶</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 * 2 * 2 = <span className="total">64</span></p>
+    <p className="exponent-label">{props.count}⁶</p>
+    <Exponent count={props.count} multiplyBy={6} />
   </div>
 );
 

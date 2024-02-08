@@ -1,7 +1,9 @@
-const ExponentFour = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n⁴</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 = <span className="total">16</span></p>
+import Exponent from "./exponent";
+
+const ExponentFour = (props) => (
+  <div className="exponent-counter-container">
+    <p className="exponent-label">{props.count}⁴</p>
+    <Exponent count={props.count} multiplyBy={4} />
   </div>
 );
 

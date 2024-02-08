@@ -1,7 +1,9 @@
-const ExponentFive = () => (
+import Exponent from "./exponent";
+
+const ExponentFive = (props) => (
   <div className="exponent-counter-container">
-    <p className="exponent-label">n⁵</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 * 2 = <span className="total">32</span></p>
+    <p className="exponent-label">{props.count}⁵</p>
+    <Exponent count={props.count} multiplyBy={5} />
   </div>
 );
 
