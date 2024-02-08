@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-const Counter = ({increment, decrement, count, setCount}) => {
+const Counter = ({count, setCount}) => {
+
+  const decrement = () => setCount(count - 1);
+  const increment = () => setCount(count + 1);
 
   return (
     <div className="counter-container">

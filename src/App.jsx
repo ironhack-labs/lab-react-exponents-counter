@@ -9,15 +9,11 @@ function App () {
 
   const [count, setCount] = useState(0);
 
-  const decrement = () => setCount(count - 1);
-  const increment = () => setCount(count + 1);
-
-
   return (
     <div className="App">
       <h2><em>Counter</em></h2>
   
-      <Counter increment={increment} decrement={decrement} count={count} setCount={setCount}/>
+      <Counter count={count} setCount={setCount}/>
 
       <br />
       <h2><em>Exponents</em></h2>
