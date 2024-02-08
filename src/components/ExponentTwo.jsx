@@ -2,9 +2,10 @@ import React from "react";
 
 const ExponentTwo = (props) => (
   <div className="exponent-counter-container">
-    <p className="exponent-label">n²</p>
+    <p className="exponent-label">{props.counter}<sub>2</sub></p>
     <p className="exponent-result">
-      2 * 2 = <span className="total">{props.counter * props.counter}</span>
+      {props.counter} * {props.counter} ={" "}
+      <span className="total">{props.counter ** 2}</span>
     </p>
   </div>
 );
