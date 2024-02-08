@@ -2,11 +2,6 @@ import "./App.css";
 import { useState } from "react";
 import Counter from "./components/Counter";
 import Exponent from "./components/Exponent";
-import ExponentTwo from "./components/ExponentTwo";
-import ExponentThree from "./components/ExponentThree";
-import ExponentFour from "./components/ExponentFour";
-import ExponentFive from "./components/ExponentFive";
-import ExponentSix from "./components/ExponentSix";
 
 
 function App() {
