@@ -1,10 +1,13 @@
 const Exponent = ( props ) => {
-    const result = props.count ** props.exponent;
+    const  {count, exponent } = props;
+
+    const multiplicationString = Array.from({length: exponent}, () => count).join(" * ");
+    const result = count ** exponent
   
     return (
      <div className="exponent-counter-container">
-      <p className="exponent-label">{`n^${props.exponent}`}</p>
-      <p className="exponent-result"> {`${props.count}^${props.exponent}`} = <span className="total">{result}</span></p>
+      <p className="exponent-label">{`${props.count}^${props.exponent}`}</p>
+      <p className="exponent-result"> {`${multiplicationString}`} = <span className="total">{result}</span></p>
     </div>
   );
   
