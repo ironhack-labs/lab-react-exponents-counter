@@ -7,24 +7,35 @@ import ExponentFive from "./components/ExponentFive";
 import ExponentSix from "./components/ExponentSix";
 import { useState } from "react";
 
-function App () {
+function App() {
   const [count, setCount] = useState(0);
+  const decrement = () => setCount((count) => count - 1);
+  const increment = () => setCount((count) => count + 1);
 
   return (
     <div className="App">
-      <h2><em>Counter</em></h2>
-  
-      <Counter count={count} setCount={setCount}/>
+      <h2>
+        <em>Counter</em>
+      </h2>
+
+      <Counter
+        count={count}
+        setCount={setCount}
+        decrement={decrement}
+        increment={increment}
+      />
 
       <br />
-      <h2><em>Exponents</em></h2>
+      <h2>
+        <em>Exponents</em>
+      </h2>
 
       <div className="container">
-        <ExponentTwo count={count}/>
-        <ExponentThree count={count}/>
-        <ExponentFour count={count}/>
-        <ExponentFive count={count}/>
-        <ExponentSix count={count}/>
+        <ExponentTwo count={count} />
+        <ExponentThree count={count} />
+        <ExponentFour count={count} />
+        <ExponentFive count={count} />
+        <ExponentSix count={count} />
       </div>
     </div>
   );
