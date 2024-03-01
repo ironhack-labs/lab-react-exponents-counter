@@ -1,10 +1,13 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+const Counter = (props) => {
+  // const [count, setCount] = useState(0); //lifted to the APP component
+  const {count, decrement, increment} = props;
+  
 
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
+
+  // const decrement = () => setCount((prevCount) => prevCount - 1); //lifted to the APP component
+  // const increment = () => setCount((prevCount) => prevCount + 1); //lifted to the APP component
 
   return (
     <div className="counter-container">
