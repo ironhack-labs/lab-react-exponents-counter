@@ -1,10 +1,10 @@
 import "./App.css";
 import Counter from "./components/Counter";
-import ExponentTwo from "./components/ExponentTwo";
-import ExponentThree from "./components/ExponentThree";
-import ExponentFour from "./components/ExponentFour";
-import ExponentFive from "./components/ExponentFive";
-import ExponentSix from "./components/ExponentSix";
+// import ExponentTwo from "./components/ExponentTwo";
+// import ExponentThree from "./components/ExponentThree";
+// import ExponentFour from "./components/ExponentFour";
+// import ExponentFive from "./components/ExponentFive";
+// import ExponentSix from "./components/ExponentSix";
 import Exponent from "./components/Exponent";
 import {useState} from "react";
 
