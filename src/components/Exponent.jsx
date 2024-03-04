@@ -1,9 +1,16 @@
 // BONUS: Iteration 4
-const Exponent = ({count}) => {
+const Exponent = ({ count, power }) => {
+
+    let countString = `${count} *` .repeat(power).slice(0, -3)
+    
     return (
-      <>
+        <div className="exponent-counter-container">
+        <p className="exponent-label">{count}<sup>{power}</sup></p>
+        <p className="exponent-result">{countString} = <span className="total">{count ** power}</span></p>
+        </div>
+    )
   
-      <div className="exponent-counter-container">
+      {/* <div className="exponent-counter-container">
           <p className="exponent-label">{count}²</p>
           <p className="exponent-result">{count} * {count} = <span className="total">{count ** 2}</span></p>
       </div>
@@ -27,10 +34,8 @@ const Exponent = ({count}) => {
           <p className="exponent-label">{count}⁶</p>
           <p className="exponent-result">{count} * {count} * {count} * {count} * {count} * {count} = <span className="total">{count ** 6}</span></p>
       </div>
-      
-      </>
-  
-    )
+       */}
+    
   }
   
   export default Exponent

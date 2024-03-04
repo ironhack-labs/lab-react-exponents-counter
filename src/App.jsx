@@ -26,13 +26,19 @@ function App () {
       <h2><em>Exponents</em></h2>
 
       <div className="container">
-        <Exponent count={count}/>
+        <Exponent count={count} power={2}/>
+        <Exponent count={count} power={3}/>
+        <Exponent count={count} power={4}/>
+        <Exponent count={count} power={5}/>
+        <Exponent count={count} power={6}/>
+
         {/* <ExponentTwo count={count}/>
         <ExponentThree count={count}/>
         <ExponentFour count={count}/>
         <ExponentFive count={count}/>
         <ExponentSix count={count}/> */}
       </div>
+      
     </div>
   );
 }
