@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Counter = () => {
+const Counter = (count, decrement, increment) => {
   const [count, setCount] = useState(0);
 
   const decrement = () => setCount((prevCount) => prevCount - 1);
