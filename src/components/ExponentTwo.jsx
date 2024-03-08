@@ -1,8 +1,19 @@
-const ExponentTwo = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n²</p>
-    <p className="exponent-result">2 * 2 = <span className="total">4</span></p>
-  </div>
-);
+// ExponentTwo.jsx
+import React, { useContext } from "react";
+import { CounterContext } from "./CounterContext.jsx";
+
+const ExponentTwo = () => {
+  const { count } = useContext(CounterContext);
+  const exponentTwo = Math.pow(count, 2);
+
+  return (
+    <div className="exponent-counter-container">
+      <p className="exponent-label">n²</p>
+      <p className="exponent-result">
+        {count}² = <span className="total">{exponentTwo}</span>
+      </p>
+    </div>
+  );
+};
 
 export default ExponentTwo;
