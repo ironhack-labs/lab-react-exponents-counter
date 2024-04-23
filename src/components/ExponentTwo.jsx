@@ -1,8 +1,14 @@
-const ExponentTwo = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n²</p>
-    <p className="exponent-result">2 * 2 = <span className="total">4</span></p>
-  </div>
-);
+const PowerTwo = (props) => {
+  const { num } = props;
 
-export default ExponentTwo;
+  return (
+    <div className="exponent-counter-container">
+      <p className="exponent-label">{num}²</p>
+      <p className="exponent-result">
+        {num} * {num} = <span className="total">{num ** 2}</span>
+      </p>
+    </div>
+  );
+};
+
+export default PowerTwo;
