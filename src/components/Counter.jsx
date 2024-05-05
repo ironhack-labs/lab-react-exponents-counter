@@ -1,10 +1,6 @@
-import { useState } from "react";
+import React from "react"
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
+const Counter = ({ count, decrement, increment }) => {
 
   return (
     <div className="counter-container">
@@ -13,6 +9,7 @@ const Counter = () => {
       <button className="counter-button" onClick={increment}>+</button>
     </div>
   );
+
 };
 
 export default Counter;
