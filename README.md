@@ -11,7 +11,7 @@
   Upon completion of this exercise, you will be able to:
 
   - Plan and organize the data flow between the components
-  - Lift the state up to the common ancestor component in an existing React app
+  - Lift the up to the common ancestor component in an existing React app
   - Pass functions as props from a parent component to a child component
 
 
@@ -148,7 +148,7 @@ Afterward, make sure to update the `<Counter />` and `<Exponent... />` component
 
 If you have correctly passed the `count` value to all components in the previous step, the count should be visible in all components. 
 
-The `Counter` component's functionality is currently broken because the state variable has been separated from the handler functions:
+The `Counter` component's functionality is currently broken because the state variable has been separated from the handler functions.
 
 <br>
 
@@ -160,7 +160,7 @@ The `Counter` component's functionality is currently broken because the state va
 
 <br>
 
-As we separated the state variable from the handler functions, the counter is broken and pressing buttons <kbd>+</kbd> and <kbd>-</kbd> doesn't anymore increment the counter. To fix this, you'll need to move the `increment` and `decrement` logic from `Counter` to the parent `App` component, where the state variable resides. 
+Now, as we separated the state variable from the handler functions, the counter is now broken. To fix this, you'll need to move the `increment` and `decrement` logic from `Counter` to the parent `App` component, where the state variable resides. 
 
 
 
@@ -182,16 +182,6 @@ As we separated the state variable from the handler functions, the counter is br
 Once you are done moving the logic to the `App`, pass the `increment` and `decrement` functions as props to the `Counter` and link them to the buttons <kbd>+</kbd> and <kbd>-</kbd>.
 
 
-
-
-<br>
-
-<p align="center">
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-exponents-counter/Iteration3.2.png" alt="Iteration 1" />
-
-
-
-</p>
 
 <br>
 
