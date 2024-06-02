@@ -5,6 +5,8 @@ const Counter = () => {
 
   const decrement = () => setCount((prevCount) => prevCount - 1);
   const increment = () => setCount((prevCount) => prevCount + 1);
+const Counter = ({count, decrement, increment}) => {
+
 
   return (
     <div className="counter-container">
@@ -14,5 +16,4 @@ const Counter = () => {
     </div>
   );
 };
-
-export default Counter;
+export default Counter
