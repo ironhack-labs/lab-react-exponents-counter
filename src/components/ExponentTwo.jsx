@@ -1,8 +1,16 @@
-const ExponentTwo = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n²</p>
-    <p className="exponent-result">2 * 2 = <span className="total">4</span></p>
-  </div>
-);
+
+
+const ExponentTwo = (props) => {
+
+  
+  const {n, exp , set} = props
+  
+  return (
+    <div className="exponent-counter-container">
+      <p className="exponent-label">{n}²</p>
+      <p className="exponent-result">{n} * {n} = <span className="total">{n*n}</span></p>
+    </div>
+  )
+};
 
 export default ExponentTwo;
