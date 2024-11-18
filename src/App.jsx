@@ -6,26 +6,18 @@ import ExponentFour from "./components/ExponentFour";
 import ExponentFive from "./components/ExponentFive";
 import ExponentSix from "./components/ExponentSix";
 
+const App = () => {
+  const [count, setCount] = useState(0);
 
-function App () {
-  return (
-    <div className="App">
-      <h2><em>Counter</em></h2>
-  
-      <Counter/>
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+  return
 
-      <br />
-      <h2><em>Exponents</em></h2>
 
-      <div className="container">
-        <ExponentTwo />
-        <ExponentThree />
-        <ExponentFour />
-        <ExponentFive />
-        <ExponentSix />
-      </div>
-    </div>
-  );
 }
+      
+     
+
+
 
 export default App;
