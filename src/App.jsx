@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter";
 import ExponentTwo from "./components/ExponentTwo";
@@ -8,21 +9,22 @@ import ExponentSix from "./components/ExponentSix";
 
 
 function App () {
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
       <h2><em>Counter</em></h2>
   
-      <Counter/>
+      <Counter count={count} setCount={setCount} />
 
       <br />
       <h2><em>Exponents</em></h2>
 
       <div className="container">
-        <ExponentTwo />
-        <ExponentThree />
-        <ExponentFour />
-        <ExponentFive />
-        <ExponentSix />
+        <ExponentTwo count={count}/>
+        <ExponentThree count={count}/>
+        <ExponentFour count={count}/>
+        <ExponentFive count={count}/>
+        <ExponentSix count={count}/>
       </div>
     </div>
   );
