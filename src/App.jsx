@@ -5,24 +5,33 @@ import ExponentThree from "./components/ExponentThree";
 import ExponentFour from "./components/ExponentFour";
 import ExponentFive from "./components/ExponentFive";
 import ExponentSix from "./components/ExponentSix";
+import { useState } from "react";
+import Exponent from "./components/Exponent";
 
 
 function App () {
+
+const [count, setCount] = useState(0);
+const handleCount = (number) => setCount((prevCount) => prevCount + number);
+const exp = 8;
+
+
   return (
     <div className="App">
       <h2><em>Counter</em></h2>
   
-      <Counter/>
+      <Counter count={count} onHandleClick={handleCount} />
 
       <br />
       <h2><em>Exponents</em></h2>
 
       <div className="container">
-        <ExponentTwo />
-        <ExponentThree />
-        <ExponentFour />
-        <ExponentFive />
-        <ExponentSix />
+        <ExponentTwo  count={count}/>
+        <ExponentThree count={count}/>
+        <ExponentFour count={count}/>
+        <ExponentFive count={count}/>
+        <ExponentSix count={count}/>
+        <Exponent count={count} exp={exp}/>
       </div>
     </div>
   );
