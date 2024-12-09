@@ -1,11 +1,7 @@
-import { useState } from "react";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+const Counter = ({ count, increment, decrement }) => {
 
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
-
+  
   return (
     <div className="counter-container">
       <p className="counter-value">{count}</p>
