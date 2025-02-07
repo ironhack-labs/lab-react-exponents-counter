@@ -1,0 +1,8 @@
+const ExponentFour = ({ count, exponent }) => (
+    <div className="exponent-counter-container">
+        <p className="exponent-label">{count}^{exponent} </p>
+        <p className="exponent-result">{count}^{exponent} = <span className="total">{Math.pow(count, exponent)}</span></p>
+    </div>
+);
+
+export default ExponentFour;
