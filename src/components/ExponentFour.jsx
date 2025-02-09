@@ -1,8 +1,7 @@
-const ExponentFour = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n⁴</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 = <span className="total">16</span></p>
-  </div>
-);
+import React from "react";
+
+const ExponentFour = ({ count }) => {
+  return <div>Exponent 4: {Math.pow(count, 4)}</div>;
+};
 
 export default ExponentFour;
