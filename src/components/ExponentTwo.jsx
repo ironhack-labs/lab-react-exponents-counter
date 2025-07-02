@@ -1,8 +1,16 @@
-const ExponentTwo = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n²</p>
-    <p className="exponent-result">2 * 2 = <span className="total">4</span></p>
-  </div>
-);
+const ExponentTwo = ({base}) => {
+  const power = 2;
+  const result = Math.pow(base, power);
+  const factors = Array(power).fill(base).join(" * ")
 
-export default ExponentTwo;
+  return (
+    <div className="exponent-counter-container">
+      <p className="exponent-label">n²</p>
+      <p className="exponent-result">
+        {factors} = <span className="total">{result}</span>
+      </p>
+    </div>
+  );
+}
+
+export default ExponentTwo; 
