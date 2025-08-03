@@ -4,5 +4,9 @@ const ExponentFive = () => (
     <p className="exponent-result">2 * 2 * 2 * 2 * 2 = <span className="total">32</span></p>
   </div>
 );
+function ExponentTwo({ count }) {
+  return <p>{count ** 5}</p>;
+}
+
 
 export default ExponentFive;
