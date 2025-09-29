@@ -12,6 +12,7 @@ function App () {
 
   const decrement = () => setCount((prevCount) => prevCount - 1);
   const increment = () => setCount((prevCount) => prevCount + 1);
+
   return (
     <div className="App">
       <h2><em>Counter</em></h2>
