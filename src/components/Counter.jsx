@@ -1,18 +1,12 @@
-import { useState } from "react";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
-
+function Counter({ count, increment, decrement }) {
   return (
-    <div className="counter-container">
-      <p className="counter-value">{count}</p>
-      <button className="counter-button" onClick={decrement}>-</button>
-      <button className="counter-button" onClick={increment}>+</button>
-    </div>
+    <>
+      <h2>Count: {count}</h2>
+      <button onClick={decrement}>-</button>
+      <button onClick={increment}>+</button>
+    </>
   );
-};
+}
 
 export default Counter;
