@@ -5,4 +5,4 @@ const ExponentSix = () => (
   </div>
 );
 
-export default ExponentSix;
+export default ExponentSix

@@ -5,4 +5,4 @@ const ExponentFive = () => (
   </div>
 );
 
-export default ExponentFive;
+export default ExponentFive

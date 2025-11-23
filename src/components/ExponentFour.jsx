@@ -5,4 +5,4 @@ const ExponentFour = () => (
   </div>
 );
 
-export default ExponentFour;
+export default ExponentFour

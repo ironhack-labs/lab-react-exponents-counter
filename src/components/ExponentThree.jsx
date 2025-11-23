@@ -5,4 +5,4 @@ const ExponentThree = () => (
   </div>
 );
 
-export default ExponentThree;
+export default ExponentThree
