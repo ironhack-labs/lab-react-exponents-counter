@@ -1,18 +1,24 @@
-import { useState } from "react";
+function ExponentTwo({ count }) {
+  return <p>{count}² = {count ** 2}</p>;
+}
+export default ExponentTwo;
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+function ExponentThree({ count }) {
+  return <p>{count}³ = {count ** 3}</p>;
+}
+export default ExponentThree;
 
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
+function ExponentFour({ count }) {
+  return <p>{count}⁴ = {count ** 4}</p>;
+}
+export default ExponentFour;
 
-  return (
-    <div className="counter-container">
-      <p className="counter-value">{count}</p>
-      <button className="counter-button" onClick={decrement}>-</button>
-      <button className="counter-button" onClick={increment}>+</button>
-    </div>
-  );
-};
+function ExponentFive({ count }) {
+  return <p>{count}⁵ = {count ** 5}</p>;
+}
+export default ExponentFive;
 
-export default Counter;
+function ExponentSix({ count }) {
+  return <p>{count}⁶ = {count ** 6}</p>;
+}
+export default ExponentSix;

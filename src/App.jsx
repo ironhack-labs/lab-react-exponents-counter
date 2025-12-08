@@ -1,31 +1,11 @@
-import "./App.css";
-import Counter from "./components/Counter";
-import ExponentTwo from "./components/ExponentTwo";
-import ExponentThree from "./components/ExponentThree";
-import ExponentFour from "./components/ExponentFour";
-import ExponentFive from "./components/ExponentFive";
-import ExponentSix from "./components/ExponentSix";
-
-
-function App () {
+const Counter = ({ count, increment, decrement }) => {
   return (
-    <div className="App">
-      <h2><em>Counter</em></h2>
-  
-      <Counter/>
-
-      <br />
-      <h2><em>Exponents</em></h2>
-
-      <div className="container">
-        <ExponentTwo />
-        <ExponentThree />
-        <ExponentFour />
-        <ExponentFive />
-        <ExponentSix />
-      </div>
+    <div className="counter-container">
+      <p className="counter-value">{count}</p>
+      <button className="counter-button" onClick={decrement}>-</button>
+      <button className="counter-button" onClick={increment}>+</button>
     </div>
   );
-}
+};
 
-export default App;
+export default Counter;
