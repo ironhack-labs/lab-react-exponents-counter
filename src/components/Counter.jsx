@@ -1,18 +1,15 @@
-import { useState } from "react";
-
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
-
+function Counter({ count, increment, decrement }) {
   return (
-    <div className="counter-container">
-      <p className="counter-value">{count}</p>
-      <button className="counter-button" onClick={decrement}>-</button>
-      <button className="counter-button" onClick={increment}>+</button>
+    <div className="counter-box">
+      <h2>Counter</h2>
+      <h1>{count}</h1>
+
+      <div className="btns">
+        <button onClick={decrement}>-</button>
+        <button onClick={increment}>+</button>
+      </div>
     </div>
   );
-};
+}
 
 export default Counter;

@@ -1,8 +1,10 @@
-const ExponentThree = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n³</p>
-    <p className="exponent-result">2 * 2 * 2 = <span className="total">8</span></p>
-  </div>
-);
+function ExponentThree({ count }) {
+  return (
+    <div className="exp-box">
+      <h2>{count}³</h2>
+      <p>{count} * {count} * {count} = {count ** 3}</p>
+    </div>
+  );
+}
 
 export default ExponentThree;

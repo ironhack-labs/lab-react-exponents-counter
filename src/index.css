@@ -1,22 +1,99 @@
-/* Base styles */
-html {
-  font-size: 16px;
+/* Reinicio básico */
+* {
+  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #F3F4F6;
-  color: #111827;
+html, body, #root {
+  height: 100%;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: 5px;
+  font-family: 'Inter', sans-serif;
+  background-color: #e6eef6; /* Fondo azul muy suave */
+  color: #1e293b; /* Azul muy oscuro para texto */
 }
 
+/* Contenedor principal para centrar todo */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 20px;
+}
 
-/* Styles */
-h1 {
-  font-size: 2rem;
+/* Contador */
+.counter-box {
+  background-color: #d7e3f5; /* Azul claro */
+  width: 260px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+  text-align: center;
+  margin-bottom: 50px;
+  user-select: none;
+}
+
+.counter-box h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.counter-box h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
   font-weight: 700;
-  margin-bottom: 16px;
+}
+
+/* Botones */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btns button {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 7px 18px rgba(59, 130, 246, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.btns button:hover {
+  background-color: #2563eb;
+}
+
+/* Título exponentes */
+.exponents-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Grid exponentes */
+.exponents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Cada tarjeta de exponente */
+.exp-box {
+  background-color: #d7e3f5; /* Azul claro */
+  padding: 25px 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+  font-weight: 600;
+  font-size: 1.2rem;
+  user-select: none;
+  text-align: center;
 }
