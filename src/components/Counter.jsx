@@ -1,24 +1,15 @@
-function ExponentTwo({ count }) {
-  return <p>{count}² = {count ** 2}</p>;
-}
-export default ExponentTwo;
+function Counter({ count, increment, decrement }) {
+  return (
+    <div className="counter-box">
+      <h2>Counter</h2>
+      <h1>{count}</h1>
 
-function ExponentThree({ count }) {
-  return <p>{count}³ = {count ** 3}</p>;
+      <div className="btns">
+        <button onClick={decrement}>-</button>
+        <button onClick={increment}>+</button>
+      </div>
+    </div>
+  );
 }
-export default ExponentThree;
 
-function ExponentFour({ count }) {
-  return <p>{count}⁴ = {count ** 4}</p>;
-}
-export default ExponentFour;
-
-function ExponentFive({ count }) {
-  return <p>{count}⁵ = {count ** 5}</p>;
-}
-export default ExponentFive;
-
-function ExponentSix({ count }) {
-  return <p>{count}⁶ = {count ** 6}</p>;
-}
-export default ExponentSix;
+export default Counter;
