@@ -1,6 +1,6 @@
 
 
-function ExponentSix({count,resault , setResault}){
+function ExponentSix({count}){
     // setResault(resault = count ** 6)
    return(
       <div className="exponent-counter-container">
