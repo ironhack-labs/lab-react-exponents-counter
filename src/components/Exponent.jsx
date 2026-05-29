@@ -1,0 +1,13 @@
+
+
+const Exponents = ({ num, exponent }) => {
+    const formula = new Array(exponent).fill(num).join(' * ')
+    return (
+        <div className="exponent-counter-container">
+            <p className="exponent-label">n<sup>{exponent}</sup></p>
+            <p className="exponent-result">{formula} = <span className="total">{num**exponent}</span></p>
+        </div>
+    )
+}
+
+export default Exponents
