@@ -10,10 +10,8 @@ import ExponentSix from "./components/ExponentSix";
 function App() {
   const [count, setCount] = useState(0);
 
-   const decrement = () => setCount((prevCount) => prevCount - 1);
+  const decrement = () => setCount((prevCount) => prevCount - 1);
   const increment = () => setCount((prevCount) => prevCount + 1);
-
-
 
   return (
     <div className="App">
@@ -21,7 +19,7 @@ function App() {
         <em>Counter</em>
       </h2>
 
-      <Counter  count={count} setCount={setCount} decrement={decrement} increment={increment} />
+      <Counter count={count} decrement={decrement} increment={increment} />
 
       <br />
       <h2>
@@ -29,11 +27,11 @@ function App() {
       </h2>
 
       <div className="container">
-        <ExponentTwo count={count} setCount={setCount} decrement={decrement} increment={increment}/>
-        <ExponentThree count={count} setCount={setCount} decrement={decrement} increment={increment}/>
-        <ExponentFour count={count} setCount={setCount} decrement={decrement} increment={increment}/>
-        <ExponentFive count={count} setCount={setCount} decrement={decrement} increment={increment}/>
-        <ExponentSix count={count} setCount={setCount} decrement={decrement} increment={increment}/>
+        <ExponentTwo count={count} setCount={setCount} />
+        <ExponentThree count={count} setCount={setCount} />
+        <ExponentFour count={count} setCount={setCount} />
+        <ExponentFive count={count} setCount={setCount} />
+        <ExponentSix count={count} setCount={setCount} />
       </div>
     </div>
   );
