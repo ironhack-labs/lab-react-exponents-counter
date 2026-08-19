@@ -1,10 +1,13 @@
 import { useState } from "react";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+const Counter = ({count, decrement, increment}) => {
 
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
+  //removed form here placed in app:
+  
+  // const [count, setCount] = useState(0);
+
+  // const decrement = () => setCount((prevCount) => prevCount - 1);
+  // const increment = () => setCount((prevCount) => prevCount + 1);
 
   return (
     <div className="counter-container">
